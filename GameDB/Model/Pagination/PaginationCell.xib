@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="paginationCell" id="KGk-i7-Jjw" customClass="PaginationCell" customModule="GameDB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7m-BR-NwG">
+                        <rect key="frame" x="25" y="25" width="80" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="OG8-9T-XD2"/>
+                            <constraint firstAttribute="width" constant="80" id="T9f-Ht-ntb"/>
+                        </constraints>
+                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" title="Previous">
+                            <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                        </buttonConfiguration>
+                    </button>
+                    <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzP-0N-H0A">
+                        <rect key="frame" x="309" y="25" width="80" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="6a2-iZ-z4o"/>
+                            <constraint firstAttribute="height" constant="40" id="TaA-Dk-ig5"/>
+                        </constraints>
+                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" title="Next">
+                            <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                        </buttonConfiguration>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBH-H3-XGN">
+                        <rect key="frame" x="200.5" y="32.5" width="13.5" height="25"/>
+                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
+                        <color key="textColor" systemColor="systemOrangeColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="mzP-0N-H0A" secondAttribute="trailing" constant="25" id="0xP-KQ-X6f"/>
+                    <constraint firstItem="mzP-0N-H0A" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="1EZ-LO-MYn"/>
+                    <constraint firstItem="FBH-H3-XGN" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="6cn-jb-im5"/>
+                    <constraint firstItem="FBH-H3-XGN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="LV1-iU-gWd"/>
+                    <constraint firstItem="v7m-BR-NwG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="Mhi-it-Sbw"/>
+                    <constraint firstItem="mzP-0N-H0A" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="VP7-Ep-c0K"/>
+                    <constraint firstItem="v7m-BR-NwG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="XO4-oL-L9G"/>
+                    <constraint firstAttribute="bottom" secondItem="v7m-BR-NwG" secondAttribute="bottom" constant="25" id="fvm-bH-3HO"/>
+                    <constraint firstAttribute="bottom" secondItem="mzP-0N-H0A" secondAttribute="bottom" constant="25" id="kfI-sZ-Oiq"/>
+                    <constraint firstItem="v7m-BR-NwG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ofO-Qc-61N"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nextButton" destination="mzP-0N-H0A" id="9gg-Xm-av8"/>
+                <outlet property="pageLabel" destination="FBH-H3-XGN" id="XBc-ar-DxO"/>
+                <outlet property="previousButton" destination="v7m-BR-NwG" id="caT-nh-Kph"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="118"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
